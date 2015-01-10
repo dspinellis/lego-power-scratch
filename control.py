@@ -48,7 +48,7 @@ for msg in listen():
     if msg[0] != 'broadcast':
         continue
     # Scratch message is e.g. "Lego 2 blue -4" or "Lego 4 r brake"
-    # to move backward channel 2 blue by 4 or brake 4 red
+    # to move backward channel 2 blue at power level 4 or brake 4 red
     data = msg[1].split()
 
     # Verify and assemble the command
