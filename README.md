@@ -47,7 +47,7 @@ irsend SEND_ONCE LEGO_Single_Output 1B_BRAKE
 ```
 
 ## Interfacing with Scratch</h2>
-* [Enable](href="http://wiki.scratch.mit.edu/wiki/Remote_Sensor_Connections) remote sensor connections in Scratch.
+* [Enable](http://wiki.scratch.mit.edu/wiki/Remote_Sensor_Connections) remote sensor connections in Scratch.
 * Installed Phillip Quiza's [scratchpy library](https://github.com/pilliq/scratchpy)
 ```
 sudo apt-get install python-setuptools
