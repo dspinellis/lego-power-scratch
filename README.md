@@ -47,13 +47,12 @@ sleep 1
 irsend SEND_ONCE LEGO_Single_Output 1B_BRAKE
 ```
 
-* Troubleshooting
-If you see the following message
+* If you see the following message when you run the `irsend` commands
 ```
 irsend: could not connect to socket
 irsend: No such file or directory
 ```
-uncomment the following line in `/boot/config.txt`
+uncomment the following line in the file `/boot/config.txt`
 ```
 dtoverlay=lirc-rpi
 ```
