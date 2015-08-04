@@ -27,6 +27,7 @@ MODULES="lirc_rpi"
 lirc_dev
 lirc_rpi gpio_in_pin=23 gpio_out_pin=22
 ```
+
 * Restart LIRC
 ```
 sudo service lirc restart
@@ -44,6 +45,17 @@ sleep 1
 irsend SEND_ONCE LEGO_Single_Output 1B_M1
 sleep 1
 irsend SEND_ONCE LEGO_Single_Output 1B_BRAKE
+```
+
+* Troubleshooting
+If you see the following message
+```
+irsend: could not connect to socket
+irsend: No such file or directory
+```
+uncomment the following line in `/boot/config.txt`
+```
+dtoverlay=lirc-rpi
 ```
 
 ## Interfacing with Scratch</h2>
