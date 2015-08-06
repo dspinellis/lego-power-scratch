@@ -30,7 +30,7 @@ lirc_dev
 ```
 lirc_rpi gpio_in_pin=23 gpio_out_pin=22
 ```
-* For a 3.18 kernel (or newer), which has a [device tree](https://www.raspberrypi.org/forums/viewtopic.php?t=97314), uncomment and adjust the following line in the file `/boot/config.txt`
+* For a 3.18 kernel (or newer), which has a [device tree](https://www.raspberrypi.org/forums/viewtopic.php?t=97314), uncomment and adjust the following line in the file `/boot/config.txt`; you can find full instructions [here](https://github.com/raspberrypi/firmware/blob/master/boot/overlays/README)
 ```
 dtoverlay=lirc-rpi,gpio_out_pin=22,gpio_in_pin=23
 ```
