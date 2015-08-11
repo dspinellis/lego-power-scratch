@@ -40,8 +40,18 @@ dtoverlay=lirc-rpi,gpio_out_pin=22,gpio_in_pin=23
 sudo mkdir -p /etc/lirc/lircd.conf.d/
 for i in Single_Output Combo_PWM Combo_Direct ; do
   curl https://raw.githubusercontent.com/dspinellis/lego-lirc/master/$i |
-  sudo dd of=/etc/lirc/lircd.conf.d/Lego-$i
+  sudo dd of=/etc/lirc/lircd.conf.d/Lego-$i.conf
 done
+
+sudo dd of=/etc/lirc/lircd.conf <<\EOF
+# This file is not required in modern versions of LIRC
+# but seems to be required for lircd 0.9.0-pre1 that currently
+# comes with Raspberry Pi's Debian GNU/Linux 7.8 (wheezy)
+
+include "/etc/lirc/lircd.conf.d/Lego-Single_Output.conf"
+include "/etc/lirc/lircd.conf.d/Lego-Combo_Direct.conf"
+include "/etc/lirc/lircd.conf.d/Lego-Combo_PWM.conf"
+EOF
 ```
 * Reboot your pi
 
