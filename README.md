@@ -1,4 +1,4 @@
-# lego-power-scratch
+## lego-power-scratch
 A script that allows controlling Lego power functions from the Scratch programming environment.  Here is how to use it.
 
 
@@ -95,3 +95,5 @@ where
  * the channel number is an integer from 1 to 4</li>
  * "Blue" or "Red" denotes the corresponding colored side of the receiver block
  * Power is an integer from -7 to 7 or the string "brake"
+
+Example: `Lego 1 Blue 7`
