@@ -1,6 +1,5 @@
 ## lego-power-scratch
-A script that allows controlling Lego power functions from the Scratch programming environment.  Here is how to use it.
-
+This is a Python script and setup instructions for controlling Lego Power Functions blocks from the Scratch programming environment.  You can find pictures and a more extensive description in an [IEEE Spectrum article](http://spectrum.ieee.org/geek-life/hands-on/replace-legos-190-intelligent-brick-with-mits-scratch-and-a-40-raspberry-pi).
 
 ## Hardware
 * Use [Alex Bain's schematic and instructions](http://alexba.in/blog/2013/03/09/raspberrypi-ir-schematic-for-lirc/)
